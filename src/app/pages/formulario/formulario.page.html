@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Formulário 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #form="ngForm" (ngSubmit)="update(form)">
+    <ion-item>
+      <ion-label>Foto:</ion-label>
+      <ion-input type="text" name="foto" [ngModel]="recipes.foto"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nome:</ion-label>
+      <ion-input type="text" name="nome" [ngModel]="recipes.nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Ingredientes:</ion-label>
+      <ion-input type="text" name="ingredientes" [ngModel]="recipes.ingredientes"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Modo de Preparo:</ion-label>
+      <ion-input type="text" name="mdp" [ngModel]="recipes.mdp"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" color="success" expand="block">Atualizar</ion-button>
+  </form>
+
+</ion-content>
