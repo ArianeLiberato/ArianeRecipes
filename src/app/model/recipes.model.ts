@@ -3,6 +3,5 @@ export interface Recipes{
     foto: string,
     nome: string,
     ingredientes: string,
-    mdp: string,
-    status: boolean
+    mdp: string
 }

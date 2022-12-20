@@ -36,9 +36,4 @@ export class DatabaseService {
     return this.http.put(this.API + id, JSON.stringify(rec), this.HttpOptions).subscribe();
   }
 
-
-
-
-
-
 }
